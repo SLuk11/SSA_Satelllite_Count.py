@@ -11,8 +11,8 @@ import datetime
 def sql_conn():
     try:
         conn = pyodbc.connect('DRIVER={SQL SERVER};'
-                      'SERVER=ssapatsc.database.windows.net;'
-                       'DATABASE=PATSC; UID=ssa.admin; PWD=$$Asatdb;Trusted_connection = yes')
+                      'SERVER=____;'
+                       'DATABASE=_____; UID=_____; PWD=_____;Trusted_connection = yes')
     except Exception as e:
         print('task is terminated')
         tkinter.messagebox.showerror("Connection Error", "ไม่สามารถเชื่อมต่อกับฐานข้อมูลได้\nกรุณาตรวจสอบสถานะอินเทอร์เน็ต")
